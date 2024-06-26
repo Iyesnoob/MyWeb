@@ -1,0 +1,77 @@
+.BoxBg{
+    background-image: url(Asset/TabBar.png);
+    height: 325px;
+    background-size: cover;
+}
+
+.Box{
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    height: 100px;
+}
+
+.But_Menu_c{
+    align-self: center;
+    background: none;
+    border: none;
+    height: 60px;
+    width: 70px;
+    transition: 1s;
+}
+
+.But_Menu_c:hover{
+    background-color: rgb(35, 35, 35);
+    rotate: 90deg;
+    
+}
+
+.ImgBM{
+    width: 50px;
+    height: 50px;
+}
+
+.MenuBut{
+    display: flex;
+    flex-direction: row;
+    transform: translateX(-750px);
+}
+
+.BV1{
+    padding-inline: 50px;
+    margin-inline: 50px;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+}
+.BV2{
+    padding-inline: 50px;
+    margin-inline: 50px;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+}
+.Parallax{
+    background-color: rgb(96, 131, 255);
+    margin: -8px;
+    height: 1000px;
+    background-attachment: fixed;
+}
+.Circle{
+    background-color: rgb(64, 87, 170);
+    height: 500px;
+    width: 500px; 
+    border-style: solid;
+    border-width: 15px;
+    border-radius: 50%;
+    border-color: rgb(29, 39, 77);
+}
+.LinePara{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 200px;
+    opacity: 0.2;
+}
+
