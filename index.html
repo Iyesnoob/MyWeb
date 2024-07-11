@@ -2,29 +2,88 @@
 <head>
     <title>My P</title>
     <link rel="stylesheet" href="Style.CSS">
+    <script src="Java.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <html>
-<body>
-<div class="Parallax">
-    <div class="BoxBg">
-        <div class="Box">
+<body class="BgBody">
+    <div class="Para">
+        
+        <div class="BoxBg">
+            <div class="Box">
 
-            <button type="button" class="But_Menu_c">
-                <img src="Asset/Iconmenu.png" class="ImgBM">
-            </button>
+                <button type="button" onclick="toggleButton()" class="MenuButC">
+                    <img src="Asset/Iconmenu.png" class="ImgBM">
+                </button>
 
-            <div class="MenuBut">
-                <button type="button" class="BV1">About me</button>
-                <button type="button" class="BV2">My Work</button>
+                <div class="MenuButShow" id="MenuOp">
+                    <button type="button" class="BV1">About me</button>
+                    <button type="button" class="BV2">My Work</button>
+                </div>
+
             </div>
+        </div>
+        
+        <div class="ContentPara">
+            <p class="CpHead">Portfolio</p>
+            <img src="Asset/MyOC.png" alt="MyOC" class="MyOC">
+        </div>
+
+        <div class="Fade">
+        </div>
+        
+    </div>
+
+    <div class="FadeN"></div>
+
+    <div class="AMContent">
+
+        <div class="AboutMeTab" id="Box1">
+            <h1>About me</h1>
+            
+                <p class="BoxTextAm">
+                    Hello!!
+                    <br>
+                    <br>
+                    My Name is <b>Asia Nitiraks </b>
+                    <br>
+                    <br>
+                    My Nickname is <b>A</b>
+                    <br>
+                    <br>
+                    I am <b>18</b> years old
+                    <br>
+                    <br>
+                    I live in <b>samutprakan</b>
+                    <br>
+                    <br>
+                    My hobbies is <b>play game</b> and
+                    <br>
+                    <b>make model</b>
+                </p>
+
+        </div>
+
+        <div id="Box2">
+            <img src="Asset/Me1(Crop).jpg" class="Me">
+        </div>
+    </div>
+    <!--Breakpoint-->
+    <div class="Break-About-Special">
+        <div class="BAS-Square"></div>
+    </div>
+    <!--Breakpoint-->
+    <div class="MySpeacialSkill">
+        <div class="MySpeacialSkillContent">
+            <h1 class="MySpeacialSkillHead">My Special Skill</h1>
 
         </div>
     </div>
-    <div class="LinePara">
-    <div class="Circle"></div>
-    </div>
-</div>
+
+    
 </body>
 
 
