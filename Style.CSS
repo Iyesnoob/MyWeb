@@ -53,6 +53,8 @@
     color: rgb(255, 255, 255);
     background: none;
     border: none;
+    text-decoration: none;
+    margin-top: 28px;
     transition: 1s;
 }
 .BV1:hover{
@@ -63,6 +65,7 @@
     color: rgb(255, 255, 255);
     background: none;
     border: none;
+    text-decoration: none;
     text-shadow: 0 0 20px;
     rotate: 5deg;
     transition: 1s;
@@ -75,7 +78,9 @@
     color: rgb(255, 255, 255);
     background: none;
     border: none;
-    transition: 1s;
+    text-decoration: none;
+    margin-top: 28px;
+    transition: 1s
 }
 .BV2:hover{
     font-family: "Bona Nova SC", serif;
@@ -110,7 +115,7 @@
 }
 .MyOC{
     height: 200px;
-    margin-top: 75px;
+    margin-top: 66px;
     display: flex;
     margin-left: 40%;
     margin-right: 50%;
@@ -194,12 +199,53 @@
     height: 1000px;
     display: grid;
     grid-template-columns: auto auto;
+    text-align: center;
 }
+
+.MySpeacialSkillHead{
+    font-size: 75px;
+    text-align: center;
+}
+
 .MySpeacialSkillContent{
     text-align: center;
 }
-.MySpeacialSkillHead{
-    font-size: 60px;
+
+.MySpeacialSkillText{
+   font-size: 20px;
+}
+
+.StarBlank{
+    height: 50px;
+    width: 50px;
+    background-color: #cccbff;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: rgb(144, 142, 255);
+    border-width: 5px;
+    display: inline-block;
+    opacity: 80%;
+    
+}
+
+.Star{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(144, 142, 255);
+    border-radius: 100%;
+    border-style: solid;
+    border-color: rgb(144, 142, 255);
+    border-width: 5px;
+    display: inline-block;
+  }
+.MyEducation{
+    display: grid;
+    grid-template-columns: auto;
+    
+}
+
+.MyEducationContent{
+    text-align: center;
 }
 
 
