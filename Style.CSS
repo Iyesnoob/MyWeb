@@ -1,251 +1,39 @@
-.BoxBg{
-    background-image: url(Asset/TabBar.png);
-    height: 325px;
-    background-size: cover;
+
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: "Mali", sans-serif;
+    
 }
 
-.Box{
-    display: flex;
-    flex-direction: row;
-    padding-left: 50px;
-    height: 100px;
-}
-
-.MenuButC{
-    align-self: center;
-    background: none;
+button {
+    font-family: "Mali", sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: pink;
     border: none;
-    height: 60px;
-    width: 70px;
-    transition: 1s;
-}
-
-.MenuButC:hover{
-    rotate: 90deg;
-}
-
-.ImgBM{
-    width: 50px;
     height: 50px;
+    width:125px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
 }
 
-
-.MenuButShow{
-    display: flex;
-    flex-direction: row;
-    transform: translateX(1px);
-    transition: 2s;
-    opacity: 1;
-}
-.MenuBut{
-    display: flex;
-    flex-direction: row;
-    transform: translateX(-750px);
-    transition: 2s;
-    opacity: 0;
+.But1:hover {
+    background-color: rgb(255, 129, 150);
 }
 
-.BV1{
-    font-family: "Bona Nova SC", serif;
-    padding-inline: 50px;
-    margin-inline: 50px;
-    font-size: 32px;
-    color: rgb(255, 255, 255);
-    background: none;
-    border: none;
-    text-decoration: none;
-    margin-top: 28px;
-    transition: 1s;
+#myImage {
+    display: none; /* Initially hidden */
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.BV1:hover{
-    font-family: "Bona Nova SC", serif;
-    padding-inline: 50px;
-    margin-inline: 50px;
-    font-size: 32px;
-    color: rgb(255, 255, 255);
-    background: none;
-    border: none;
-    text-decoration: none;
-    text-shadow: 0 0 20px;
-    rotate: 5deg;
-    transition: 1s;
-}
-.BV2{
-    font-family: "Bona Nova SC", serif;
-    padding-inline: 50px;
-    margin-inline: 50px;
-    font-size: 32px;
-    color: rgb(255, 255, 255);
-    background: none;
-    border: none;
-    text-decoration: none;
-    margin-top: 28px;
-    transition: 1s
-}
-.BV2:hover{
-    font-family: "Bona Nova SC", serif;
-    padding-inline: 50px;
-    margin-inline: 50px;
-    font-size: 32px;
-    color: rgb(255, 255, 255);
-    background: none;
-    border: none;
-    text-shadow: 0 0 20px;
-    rotate: -5deg;
-    transition: 1s;
-}
-.Para{
-    margin: -8px;
-    background-image: url(Asset/MyGame.png);
-    height: 900px;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.BgBody{
-    font-family: "Bona Nova SC", serif;
-    background-color: rgb(230, 238, 255);
-}
-.ContentPara{
-    display: grid;
-    grid-template-columns: auto auto;
-    
-    margin-top: -50px;
-    color: rgb(206, 206, 206);
-    
-}
-.MyOC{
-    height: 200px;
-    margin-top: 66px;
-    display: flex;
-    margin-left: 40%;
-    margin-right: 50%;
-    opacity: 80%;
-    border-radius: 100%;
-    transition: 1s;
-}
-
-.MyOC:hover{
-    height: 250px;
-    margin-top: 50px;
-    display: flex;
-    margin-left: 40%;
-    margin-right: 50%;
-    opacity: 100%;
-    border-radius: 100%;
-    rotate: -5deg;
-    transition: 1s;
-    box-shadow: 0 0 10px;
-}
-
-.CpHead{
-    font-size: 100px;
-    text-align: center;
-    margin-left: -200px;
-    transition: 1s;
-}
-.CpHead:hover{
-    font-size: 110px;
-    rotate: 1deg;
-    margin-left: -225px;
-    text-shadow: 0 0 20px;
-    transition: 1s;
-}
-.Fade{
-    background-image: url(Asset/TabBarFlip.png);
-    height: 325px;
-    background-size: cover;
-}
-.FadeN{
-    background-image: url(Asset/TabBar.png);
-    height: 325px;
-    background-size: cover;
-    margin: -8px;
-}
-.AMContent{
-    height: 1000px;
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.AboutMeTab{
-    font-size: 40px;
-    text-align: center;
-    margin-top: 70px;
-}
-.BoxTextAm{
-    text-align: left;
-    margin-left: 250px;
-}
-.Me{
-    height: 750px;
-    margin-top: 125px;
-    margin-left: 50px;
-    margin-right: -50px;
-    border-radius: 50px;
-    box-shadow: 0 0 20px;
-}
-.Break-About-Special{
-    margin-top: 100px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-}
-.BAS-Square{
-    background-color: rgb(13, 13, 13);
-    width: 750px;
-    height: 5px;
-    border-radius: 50%;
-}
-.MySpeacialSkill{
-    height: 1000px;
-    display: grid;
-    grid-template-columns: auto auto;
-    text-align: center;
-}
-
-.MySpeacialSkillHead{
-    font-size: 75px;
-    text-align: center;
-}
-
-.MySpeacialSkillContent{
-    text-align: center;
-}
-
-.MySpeacialSkillText{
-   font-size: 20px;
-}
-
-.StarBlank{
-    height: 50px;
-    width: 50px;
-    background-color: #cccbff;
-    border-radius: 100%;
-    border-style: solid;
-    border-color: rgb(144, 142, 255);
-    border-width: 5px;
-    display: inline-block;
-    opacity: 80%;
-    
-}
-
-.Star{
-    height: 50px;
-    width: 50px;
-    background-color: rgb(144, 142, 255);
-    border-radius: 100%;
-    border-style: solid;
-    border-color: rgb(144, 142, 255);
-    border-width: 5px;
-    display: inline-block;
-  }
-.MyEducation{
-    display: grid;
-    grid-template-columns: auto;
-    
-}
-
-.MyEducationContent{
-    text-align: center;
-}
-
-

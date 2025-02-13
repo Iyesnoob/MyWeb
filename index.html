@@ -1,239 +1,56 @@
 <!DOCTYPE html>
 <head>
-    <title>My P</title>
-    <link rel="stylesheet" href="Style.CSS">
-    <script src="Java.js"></script>
+    <title>Love Aom Naaa</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;
+    0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" 
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="Style.CSS">
+    <script src="Java.js"></script>
+
 </head>
 
-<html>
-<body class="BgBody">
-    <div class="Para">
+<body>
+    <button id="myButton" onclick="ChangeName()" class="But1">กดตรงนี้</button>
+    <img id="myImage" src="Asset/CatHoldFlowerV2.png" alt="Example Image">
+    <audio id="sound" src="Asset/tada.mp3" preload="auto"></audio>
+
+
+    <script>
+        let clickCount = 0;
+        const button = document.getElementById('myButton');
+        const image = document.getElementById('myImage');
+        const body = document.body;
+        const sound = document.getElementById('sound');
         
-        <div class="BoxBg">
-            <div class="Box">
 
-                <button type="button" onclick="toggleButton()" class="MenuButC">
-                    <img src="Asset/Iconmenu.png" class="ImgBM">
-                </button>
+        function ChangeName() {
+            clickCount++;
 
-                <div class="MenuButShow" id="MenuOp">
-                    <a href="#Aboutme" class="BV1">About me</a>
-                    <a href="" class="BV2">My Work</a>
-                </div>
+            if (clickCount === 1) {
+                button.innerHTML = '..กดอีก';
+            } else if (clickCount === 2) {
+                button.innerHTML = 'อีกที่นึง..';
+            } else if (clickCount === 3) {
+                button.innerHTML = 'ครั้งสุดท้าย';
+            } else if (clickCount === 4) {
+                button.innerHTML = 'Clicked Four Times';
 
-            </div>
-        </div>
-        
-        <div class="ContentPara">
-            <p class="CpHead">Portfolio</p>
-            <img src="Asset/MyOC.png" alt="MyOC" class="MyOC">
-        </div>
+                // Hide the button
+                button.style.display = 'none';
 
-        <div class="Fade">
-        </div>
-        
-    </div>
+                // Show the image
+                image.style.display = 'block';
 
-    <div class="FadeN"></div>
+                // Change background color
+                body.style.backgroundColor = '#F7CFD8';
 
-    <div class="AMContent" id="Aboutme">
+                sound.play();
 
-        <div class="AboutMeTab" id="Box1">
-            <h1>About me</h1>
-            
-                <p class="BoxTextAm">
-                    Hello!!
-                    <br>
-                    <br>
-                    My Name is <b>Asia Nitiraks </b>
-                    <br>
-                    <br>
-                    My Nickname is <b>A</b>
-                    <br>
-                    <br>
-                    I am <b>18</b> years old
-                    <br>
-                    <br>
-                    I live in <b>samutprakan</b>
-                    <br>
-                    <br>
-                    My hobbies is <b>play game</b> and
-                    <br>
-                    <b>make model</b>
-                </p>
+            }
 
-        </div>
-
-        <div id="Box2">
-            <img src="Asset/Me1(Crop).jpg" class="Me">
-        </div>
-    </div>
-    <!--Breakpoint-->
-    <div class="Break-About-Special">
-        <div class="BAS-Square"></div>
-    </div>
-    <!--Breakpoint-->
-    
-    <!--MyEducation-->
-    
-    <h1 class="MySpeacialSkillHead">My Education</h1>
-
-    <div class="MyEducation">
-        <br>
-        <br>
-        <br>
-        <div class="MyEducationContent">
-            <img src="Asset/Siwitaya logo.jfif" alt="">
-        </div>
-        <div class="MyEducationContent">
-            <p style="font-size: 25px;">PrimarySchool</p>
-            <p style="font-size: 50px; margin-top: -15px;">Sriwittayapaknam</p>
-        </div>
-        <div class="MyEducationContent">
-            <img src="Asset/ตราสัญลักษณ์ประจำโรงเรียนสมุทรปราการ.gif" alt="">
-        </div>
-        <div class="MyEducationContent">
-            <p style="font-size: 25px;">SecondarySchool</p>
-            <p style="font-size: 50px; margin-top: -15px;">Samutprakan</p>
-        </div>
-        <br>
-        <br>
-        <br>
-    </div>
-    <!--MyEducation-->
-    
-    <!--MySpeacialSkill-->
-    <h1 class="MySpeacialSkillHead">My Special Skill</h1>
-    <br>
-    <br>
-    <div class="MySpeacialSkill">
-        
-        <div class="MySpeacialSkillContent">
-            
-            <!--HeadSkill-->
-            <p class="MySpeacialSkillText"><b>Code</b></p>
-            <!--HeadSkill-->
-            <br>
-        <!--Items-->    
-            <p class="MySpeacialSkillText"><i>C#</i></p>
-            
-                <div class="Staritems">
-                    <div class="Star" style="height: 25px; width: 25px;"></div>
-                    <div class="Star" style="height: 40px; width: 40px;"></div>
-                    <div class="StarBlank"></div>
-                    <div class="StarBlank" style="height: 40px; width: 40px;"></div>
-                    <div class="StarBlank" style="height: 25px; width: 25px;"></div>
-                </div>
-                <p class="MySpeacialSkillText"><i>(Learning)</i></p>
-        <!--Items-->
-        <br>
-        <br>
-        <!--Items-->    
-            <p class="MySpeacialSkillText"><i>Java</i></p>
-            
-                <div class="Staritems">
-                    <div class="Star" style="height: 25px; width: 25px;"></div>
-                    <div class="StarBlank" style="height: 40px; width: 40px;"></div>
-                    <div class="StarBlank"></div>
-                    <div class="StarBlank" style="height: 40px; width: 40px;"></div>
-                    <div class="StarBlank" style="height: 25px; width: 25px;"></div>
-                </div>
-            <p class="MySpeacialSkillText"><i>(Beginner)</i></p>
-        <!--Items-->
-        <br>
-        <br>
-        <!--Items-->    
-            <p class="MySpeacialSkillText"><i>Python</i></p>
-            
-                <div class="Staritems">
-                    <div class="Star" style="height: 25px; width: 25px;"></div>
-                    <div class="StarBlank" style="height: 40px; width: 40px;"></div>
-                    <div class="StarBlank"></div>
-                    <div class="StarBlank" style="height: 40px; width: 40px;"></div>
-                    <div class="StarBlank" style="height: 25px; width: 25px;"></div>
-                </div>
-            <p class="MySpeacialSkillText"><i>(Beginner)</i></p>
-        <!--Items-->
-        <br>
-        <br>
-        <!--Items-->    
-            <p class="MySpeacialSkillText"><i>Lua</i></p>
-            
-                <div class="Staritems">
-                    <div class="Star" style="height: 25px; width: 25px;"></div>
-                    <div class="Star" style="height: 40px; width: 40px;"></div>
-                    <div class="Star"></div>
-                    <div class="StarBlank" style="height: 40px; width: 40px;"></div>
-                    <div class="StarBlank" style="height: 25px; width: 25px;"></div>
-                </div>
-            <p class="MySpeacialSkillText"><i>(interminate)</i></p>
-        <!--Items-->
-        </div>
-        <div class="MySpeacialSkillContent">
-        <!--Head-->
-            <p class="MySpeacialSkillText"><b>Digital Art</b></p>
-        <!--Head-->
-        <br>
-        <!--Items-->
-            <p class="MySpeacialSkillText"><i>Digital Painting</i></p>
-            
-                <div class="Staritems">
-                    <div class="Star" style="height: 25px; width: 25px;"></div>
-                    <div class="Star" style="height: 40px; width: 40px;"></div>
-                    <div class="Star"></div>
-                    <div class="StarBlank" style="height: 40px; width: 40px;"></div>
-                    <div class="StarBlank" style="height: 25px; width: 25px;"></div>
-                </div>
-
-            <p class="MySpeacialSkillText"><i>(interminate)</i></p>
-        <!--Items-->
-        <br>
-        <br>
-        <!--Items-->
-            <p class="MySpeacialSkillText"><i>3D Modeling</i></p>
-            
-                <div class="Staritems">
-                    <div class="Star" style="height: 25px; width: 25px;"></div>
-                    <div class="Star" style="height: 40px; width: 40px;"></div>
-                    <div class="Star"></div>
-                    <div class="Star" style="height: 40px; width: 40px;"></div>
-                    <div class="StarBlank" style="height: 25px; width: 25px;"></div>
-                </div>
-
-            <p class="MySpeacialSkillText"><i>(Experienced)</i></p>
-        <!--Items-->
-        <br>
-        <br>
-        <!--Items-->
-            <p class="MySpeacialSkillText"><i>Animation</i></p>
-            
-                <div class="Staritems">
-                    <div class="Star" style="height: 25px; width: 25px;"></div>
-                    <div class="Star" style="height: 40px; width: 40px;"></div>
-                    <div class="Star"></div>
-                    <div class="StarBlank" style="height: 40px; width: 40px;"></div>
-                    <div class="StarBlank" style="height: 25px; width: 25px;"></div>
-                </div>
-
-            <p class="MySpeacialSkillText"><i>(interminate)</i></p>
-        <!--Items-->
-
-        </div>  
-    </div>
-    <!--MySpeacialSkill-->
-    <!--MyWork-->
-    <div style="background-color: ;">
-
-    </div>
-    
-    <!--MyWork-->
-
-    
+            }
+    </script>
 </body>
-
-
-
-</html>
